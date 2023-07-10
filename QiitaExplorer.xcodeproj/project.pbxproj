@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B45FD222A56F4D900043A5A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45FD212A56F4D900043A5A /* Router.swift */; };
+		3B45FD242A56F7EE00043A5A /* WebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45FD232A56F7EE00043A5A /* WebPresenter.swift */; };
+		3B45FD262A56FDB300043A5A /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B45FD252A56FDB300043A5A /* Web.storyboard */; };
+		3B45FD282A56FDFE00043A5A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B45FD272A56FDFE00043A5A /* WebViewController.swift */; };
+		3B7D414F2A5ABD4D0083DD42 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D414E2A5ABD4D0083DD42 /* ImageDownloader.swift */; };
+		3B8E74C22A54E46800235314 /* QiitaSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8E74C12A54E46800235314 /* QiitaSearch.storyboard */; };
+		3B8E74C42A54E48100235314 /* QiitaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E74C32A54E48100235314 /* QiitaSearchViewController.swift */; };
+		3B8F02F52A4EE4B70068275D /* QiitaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F02F42A4EE4B70068275D /* QiitaModel.swift */; };
+		3B8F02F72A4EE5760068275D /* QiitaAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F02F62A4EE5760068275D /* QiitaAPIError.swift */; };
+		3B8F02F92A4EE9640068275D /* QiitaClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F02F82A4EE9640068275D /* QiitaClientError.swift */; };
+		3B8F02FB2A4FAC220068275D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F02FA2A4FAC220068275D /* HTTPMethod.swift */; };
+		3B8F03002A4FD7F10068275D /* QiitaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F02FF2A4FD7F10068275D /* QiitaRequest.swift */; };
+		3B9458542A4FE749008F1991 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9458532A4FE749008F1991 /* QiitaAPI.swift */; };
+		3B9458562A50090C008F1991 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9458552A50090C008F1991 /* HTTPClient.swift */; };
+		3B9458582A501800008F1991 /* QiitaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9458572A501800008F1991 /* QiitaClient.swift */; };
+		3B94585A2A503005008F1991 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9458592A503005008F1991 /* SearchPresenter.swift */; };
+		3B94585C2A53C5F2008F1991 /* QiitaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B94585B2A53C5F2008F1991 /* QiitaTableViewCell.xib */; };
+		3B94585E2A53C619008F1991 /* QiitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94585D2A53C619008F1991 /* QiitaTableViewCell.swift */; };
+		3B9A30782A4DC7070055853D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A30772A4DC7070055853D /* AppDelegate.swift */; };
+		3B9A307A2A4DC7070055853D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A30792A4DC7070055853D /* SceneDelegate.swift */; };
+		3B9A30812A4DC7080055853D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9A30802A4DC7080055853D /* Assets.xcassets */; };
+		3B9A30842A4DC7080055853D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9A30822A4DC7080055853D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B45FD212A56F4D900043A5A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3B45FD232A56F7EE00043A5A /* WebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPresenter.swift; sourceTree = "<group>"; };
+		3B45FD252A56FDB300043A5A /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		3B45FD272A56FDFE00043A5A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3B7D414E2A5ABD4D0083DD42 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		3B8E74C12A54E46800235314 /* QiitaSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QiitaSearch.storyboard; sourceTree = "<group>"; };
+		3B8E74C32A54E48100235314 /* QiitaSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaSearchViewController.swift; sourceTree = "<group>"; };
+		3B8F02F42A4EE4B70068275D /* QiitaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaModel.swift; sourceTree = "<group>"; };
+		3B8F02F62A4EE5760068275D /* QiitaAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIError.swift; sourceTree = "<group>"; };
+		3B8F02F82A4EE9640068275D /* QiitaClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClientError.swift; sourceTree = "<group>"; };
+		3B8F02FA2A4FAC220068275D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3B8F02FF2A4FD7F10068275D /* QiitaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRequest.swift; sourceTree = "<group>"; };
+		3B9458532A4FE749008F1991 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		3B9458552A50090C008F1991 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		3B9458572A501800008F1991 /* QiitaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaClient.swift; sourceTree = "<group>"; };
+		3B9458592A503005008F1991 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		3B94585B2A53C5F2008F1991 /* QiitaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QiitaTableViewCell.xib; sourceTree = "<group>"; };
+		3B94585D2A53C619008F1991 /* QiitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaTableViewCell.swift; sourceTree = "<group>"; };
+		3B9A30742A4DC7070055853D /* QiitaExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9A30772A4DC7070055853D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B9A30792A4DC7070055853D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B9A30802A4DC7080055853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B9A30832A4DC7080055853D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B9A30852A4DC7080055853D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B9A30712A4DC7070055853D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B8F02FC2A4FD74E0068275D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F02FE2A4FD76F0068275D /* Error */,
+				3B8F02FD2A4FD75B0068275D /* Request */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3B8F02FD2A4FD75B0068275D /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F02FA2A4FAC220068275D /* HTTPMethod.swift */,
+				3B8F02FF2A4FD7F10068275D /* QiitaRequest.swift */,
+				3B9458532A4FE749008F1991 /* QiitaAPI.swift */,
+				3B9458552A50090C008F1991 /* HTTPClient.swift */,
+				3B9458572A501800008F1991 /* QiitaClient.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3B8F02FE2A4FD76F0068275D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F02F62A4EE5760068275D /* QiitaAPIError.swift */,
+				3B8F02F82A4EE9640068275D /* QiitaClientError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3B9A306B2A4DC7070055853D = {
+			isa = PBXGroup;
+			children = (
+				3B9A30762A4DC7070055853D /* QiitaExplorer */,
+				3B9A30752A4DC7070055853D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B9A30752A4DC7070055853D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A30742A4DC7070055853D /* QiitaExplorer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9A30762A4DC7070055853D /* QiitaExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A30772A4DC7070055853D /* AppDelegate.swift */,
+				3B9A30792A4DC7070055853D /* SceneDelegate.swift */,
+				3B9A308B2A4DC7260055853D /* Model */,
+				3B9A308C2A4DC7410055853D /* Search */,
+				3B9A308E2A4DC7670055853D /* Web */,
+				3B9A308D2A4DC7540055853D /* Utility */,
+				3B9A30802A4DC7080055853D /* Assets.xcassets */,
+				3B9A30822A4DC7080055853D /* LaunchScreen.storyboard */,
+				3B9A30852A4DC7080055853D /* Info.plist */,
+			);
+			path = QiitaExplorer;
+			sourceTree = "<group>";
+		};
+		3B9A308B2A4DC7260055853D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B8F02F42A4EE4B70068275D /* QiitaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B9A308C2A4DC7410055853D /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A308F2A4DC7850055853D /* Presenter */,
+				3B9A30902A4DC7940055853D /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3B9A308D2A4DC7540055853D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3B45FD212A56F4D900043A5A /* Router.swift */,
+				3B7D414E2A5ABD4D0083DD42 /* ImageDownloader.swift */,
+				3B8F02FC2A4FD74E0068275D /* API */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3B9A308E2A4DC7670055853D /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				3B9A30912A4DC7D80055853D /* Presenter */,
+				3B9A30922A4DC7E40055853D /* View */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		3B9A308F2A4DC7850055853D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B9458592A503005008F1991 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3B9A30902A4DC7940055853D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B94585B2A53C5F2008F1991 /* QiitaTableViewCell.xib */,
+				3B94585D2A53C619008F1991 /* QiitaTableViewCell.swift */,
+				3B8E74C12A54E46800235314 /* QiitaSearch.storyboard */,
+				3B8E74C32A54E48100235314 /* QiitaSearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B9A30912A4DC7D80055853D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B45FD232A56F7EE00043A5A /* WebPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3B9A30922A4DC7E40055853D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B45FD252A56FDB300043A5A /* Web.storyboard */,
+				3B45FD272A56FDFE00043A5A /* WebViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B9A30732A4DC7070055853D /* QiitaExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9A30882A4DC7080055853D /* Build configuration list for PBXNativeTarget "QiitaExplorer" */;
+			buildPhases = (
+				3B9A30702A4DC7070055853D /* Sources */,
+				3B9A30712A4DC7070055853D /* Frameworks */,
+				3B9A30722A4DC7070055853D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QiitaExplorer;
+			productName = QiitaExplorer;
+			productReference = 3B9A30742A4DC7070055853D /* QiitaExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B9A306C2A4DC7070055853D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3B9A30732A4DC7070055853D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 3B9A306F2A4DC7070055853D /* Build configuration list for PBXProject "QiitaExplorer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B9A306B2A4DC7070055853D;
+			productRefGroup = 3B9A30752A4DC7070055853D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B9A30732A4DC7070055853D /* QiitaExplorer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B9A30722A4DC7070055853D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9A30842A4DC7080055853D /* LaunchScreen.storyboard in Resources */,
+				3B9A30812A4DC7080055853D /* Assets.xcassets in Resources */,
+				3B94585C2A53C5F2008F1991 /* QiitaTableViewCell.xib in Resources */,
+				3B8E74C22A54E46800235314 /* QiitaSearch.storyboard in Resources */,
+				3B45FD262A56FDB300043A5A /* Web.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9A30702A4DC7070055853D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9458542A4FE749008F1991 /* QiitaAPI.swift in Sources */,
+				3B8F02F72A4EE5760068275D /* QiitaAPIError.swift in Sources */,
+				3B94585A2A503005008F1991 /* SearchPresenter.swift in Sources */,
+				3B45FD242A56F7EE00043A5A /* WebPresenter.swift in Sources */,
+				3B8E74C42A54E48100235314 /* QiitaSearchViewController.swift in Sources */,
+				3B8F02F52A4EE4B70068275D /* QiitaModel.swift in Sources */,
+				3B8F02FB2A4FAC220068275D /* HTTPMethod.swift in Sources */,
+				3B45FD222A56F4D900043A5A /* Router.swift in Sources */,
+				3B9A30782A4DC7070055853D /* AppDelegate.swift in Sources */,
+				3B9458562A50090C008F1991 /* HTTPClient.swift in Sources */,
+				3B7D414F2A5ABD4D0083DD42 /* ImageDownloader.swift in Sources */,
+				3B8F02F92A4EE9640068275D /* QiitaClientError.swift in Sources */,
+				3B45FD282A56FDFE00043A5A /* WebViewController.swift in Sources */,
+				3B94585E2A53C619008F1991 /* QiitaTableViewCell.swift in Sources */,
+				3B8F03002A4FD7F10068275D /* QiitaRequest.swift in Sources */,
+				3B9458582A501800008F1991 /* QiitaClient.swift in Sources */,
+				3B9A307A2A4DC7070055853D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B9A30822A4DC7080055853D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9A30832A4DC7080055853D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9A30862A4DC7080055853D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B9A30872A4DC7080055853D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9A30892A4DC7080055853D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiitaExplorer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.QiitaExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B9A308A2A4DC7080055853D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QiitaExplorer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.QiitaExplorer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B9A306F2A4DC7070055853D /* Build configuration list for PBXProject "QiitaExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9A30862A4DC7080055853D /* Debug */,
+				3B9A30872A4DC7080055853D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9A30882A4DC7080055853D /* Build configuration list for PBXNativeTarget "QiitaExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9A30892A4DC7080055853D /* Debug */,
+				3B9A308A2A4DC7080055853D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B9A306C2A4DC7070055853D /* Project object */;
+}
