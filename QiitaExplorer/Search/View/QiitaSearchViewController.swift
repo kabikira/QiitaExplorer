@@ -9,6 +9,7 @@ import UIKit
 
 class QiitaSearchViewController: UIViewController {
 
+    @IBOutlet private weak var sortTypeSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var searchButton: UIButton!
 
     @IBOutlet private weak var searchTextField: UITextField! {
@@ -36,8 +37,8 @@ class QiitaSearchViewController: UIViewController {
         indicator.isHidden = true
     }
     @objc func tapSearchBotton(_sender: UIResponder) {
-        self.presenter.searchText(searchTextField.text, sortType: false)
-
+        let isArticlesSelected: Bool = sortTypeSegmentedControl.selectedSegmentIndex == 0
+            self.presenter.searchText(searchTextField.text, sortType: isArticlesSelected)
     }
 }
 
