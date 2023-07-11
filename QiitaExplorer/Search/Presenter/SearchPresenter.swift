@@ -46,6 +46,7 @@ extension QiitaSearchPresenter: QiitaSearchPresenterInput {
         guard let text = text else {return}
         output.showLoadingIndicator(loading: true)
 
+        //　QiitaAPI.GetArticlesとQiitaAPI.GetTagsで型違うのでうまくわけられないスケーラビリティに問題あり
         if sortType {
             let request = QiitaAPI.GetArticles(keyword: text)
             client.send(request: request) { [weak self] result in
