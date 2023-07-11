@@ -10,7 +10,7 @@ import Foundation
 protocol QiitaSearchPresenterInput {
     var numberOfItems: Int { get }
     func qiitaItem(index: Int) -> QiitaModel?
-    func searchText(_ text: String?)
+    func searchText(_ text: String?, sortType: Bool)
     func didSelect(index: Int)
 
 }
@@ -42,19 +42,38 @@ extension QiitaSearchPresenter: QiitaSearchPresenterInput {
     func didSelect(index: Int) {
         output.showWeb(qiitaModel: qiitaModels[index])
     }
-    func searchText(_ text: String?) {
+    func searchText(_ text: String?, sortType: Bool) {
         guard let text = text else {return}
         output.showLoadingIndicator(loading: true)
-        let request = QiitaAPI.GetArticles(keyword: text)
-        client.send(request: request) { [weak self] result in
-            DispatchQueue.main.async {
-                self?.output.showLoadingIndicator(loading: false)
-                switch result {
-                case .failure(let error):
-                    self?.output.get(error: error)
-                case .success(let items):
-                    self?.qiitaModels = items
-                    self?.output.updateModel(qiitaModels: items)
+
+        if sortType {
+            let request = QiitaAPI.GetArticles(keyword: text)
+            client.send(request: request) { [weak self] result in
+                DispatchQueue.main.async {
+                    self?.output.showLoadingIndicator(loading: false)
+                    switch result {
+                    case .failure(let error):
+                        self?.output.get(error: error)
+                    case .success(let items):
+                        self?.qiitaModels = items
+                        self?.output.updateModel(qiitaModels: items)
+                    }
+                }
+            }
+
+        } else {
+            let request = QiitaAPI.GetTags(keyword: text)
+
+            client.send(request: request) { [weak self] result in
+                DispatchQueue.main.async {
+                    self?.output.showLoadingIndicator(loading: false)
+                    switch result {
+                    case .failure(let error):
+                        self?.output.get(error: error)
+                    case .success(let items):
+                        self?.qiitaModels = items
+                        self?.output.updateModel(qiitaModels: items)
+                    }
                 }
             }
         }

@@ -36,7 +36,7 @@ class QiitaSearchViewController: UIViewController {
         indicator.isHidden = true
     }
     @objc func tapSearchBotton(_sender: UIResponder) {
-        self.presenter.searchText(searchTextField.text)
+        self.presenter.searchText(searchTextField.text, sortType: false)
 
     }
 }
@@ -59,8 +59,6 @@ extension QiitaSearchViewController: UITableViewDataSource {
         }
         let qiitaModel = presenter.qiitaItem(index: indexPath.row)!
         cell.configure(qiitaModel: qiitaModel)
-        //ここで画像URLをわたして
-        //cellのconfigureにもわたす
         return cell
     }
 }
