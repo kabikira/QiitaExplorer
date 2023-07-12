@@ -28,8 +28,7 @@ final class QiitaTableViewCell: UITableViewCell {
             case .success(let imageDate):
                 DispatchQueue.main.async {
                     self?.iconImageView.image = imageDate
-                    // これいる？
-                    self?.setNeedsLayout()
+
                 }
                 case .failure(let error):
                 print(error)
