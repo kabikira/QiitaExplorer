@@ -86,7 +86,7 @@ extension QiitaSearchViewController: QiitaSearchPresenterOutput {
 
     func showWeb(qiitaModel: QiitaModel) {
         DispatchQueue.main.async {
-            Router.shared.shoWeb(from: self, qiitaModel: qiitaModel)
+            Router.shared.showWeb(from: self, qiitaModel: qiitaModel)
         }
     }
 }
