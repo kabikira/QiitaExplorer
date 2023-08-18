@@ -9,6 +9,7 @@ import UIKit
 
 class QiitaSearchViewController: UIViewController {
 
+    @IBOutlet private weak var sortTypeSegmentedControl: UISegmentedControl!
     @IBOutlet private weak var searchButton: UIButton!
 
     @IBOutlet private weak var searchTextField: UITextField! {
@@ -36,8 +37,8 @@ class QiitaSearchViewController: UIViewController {
         indicator.isHidden = true
     }
     @objc func tapSearchBotton(_sender: UIResponder) {
-        self.presenter.searchText(searchTextField.text)
-
+        let isArticlesSelected: Bool = sortTypeSegmentedControl.selectedSegmentIndex == 0
+            self.presenter.searchText(searchTextField.text, sortType: isArticlesSelected)
     }
 }
 
@@ -59,8 +60,6 @@ extension QiitaSearchViewController: UITableViewDataSource {
         }
         let qiitaModel = presenter.qiitaItem(index: indexPath.row)!
         cell.configure(qiitaModel: qiitaModel)
-        //ここで画像URLをわたして
-        //cellのconfigureにもわたす
         return cell
     }
 }
@@ -87,7 +86,7 @@ extension QiitaSearchViewController: QiitaSearchPresenterOutput {
 
     func showWeb(qiitaModel: QiitaModel) {
         DispatchQueue.main.async {
-            Router.shared.shoWeb(from: self, qiitaModel: qiitaModel)
+            Router.shared.showWeb(from: self, qiitaModel: qiitaModel)
         }
     }
 }

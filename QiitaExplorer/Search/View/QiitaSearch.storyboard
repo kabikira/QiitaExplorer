@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wOa-SI-twv">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,8 +20,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-wn-f4u">
                                 <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-b8-5hF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XFy-kh-bjb">
+                                                <rect key="frame" x="134.5" y="0.0" width="145" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="F79-Le-1Ht"/>
+                                                    <constraint firstAttribute="width" constant="145" id="g8I-C7-oSm"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="記事検索"/>
+                                                    <segment title="タグ検索"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rp-BC-pjy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                        <rect key="frame" x="0.0" y="38" width="414" height="48"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tlf-vo-UIj">
                                                 <rect key="frame" x="8" y="8" width="398" height="32"/>
@@ -48,13 +65,13 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-DR-xks">
-                                        <rect key="frame" x="0.0" y="56" width="414" height="792"/>
+                                        <rect key="frame" x="0.0" y="94" width="414" height="754"/>
                                         <subviews>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LIG-bE-0rG">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="754"/>
                                             </activityIndicatorView>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tDu-SO-x7Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="754"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <color key="separatorColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </tableView>
@@ -87,6 +104,7 @@
                         <outlet property="indicator" destination="LIG-bE-0rG" id="fXM-Pf-sId"/>
                         <outlet property="searchButton" destination="ikR-3R-I1J" id="do0-ft-mtP"/>
                         <outlet property="searchTextField" destination="Ggj-PK-uPZ" id="2Mm-l9-cXf"/>
+                        <outlet property="sortTypeSegmentedControl" destination="XFy-kh-bjb" id="lYX-d9-gpo"/>
                         <outlet property="tableView" destination="tDu-SO-x7Q" id="u7e-Hh-ntE"/>
                     </connections>
                 </viewController>

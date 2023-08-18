@@ -6,7 +6,14 @@
 //
 
 import UIKit
-final class Router {
+
+protocol RouterProtocol {
+    func showRoot(window: UIWindow)
+    func showWeb(from: UIViewController, qiitaModel: QiitaModel)
+}
+
+final class Router: RouterProtocol {
+
     static let shared = Router()
     private init() {}
 
@@ -25,7 +32,7 @@ final class Router {
         self.window = window
     }
 
-    func shoWeb(from: UIViewController, qiitaModel: QiitaModel) {
+    func showWeb(from: UIViewController, qiitaModel: QiitaModel) {
         guard let web = UIStoryboard.init(name: "Web", bundle: nil).instantiateInitialViewController() as? WebViewController else {
           return
         }
