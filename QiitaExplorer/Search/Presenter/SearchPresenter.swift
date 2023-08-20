@@ -25,13 +25,11 @@ protocol QiitaSearchPresenterOutput: AnyObject {
 final class QiitaSearchPresenter {
     private weak var output: QiitaSearchPresenterOutput!
     private var client: QiitaClient
-    private var imageDownloader: ImageDownloaderProtocol!
     private var qiitaModels: [QiitaModel]
 
-    init (output: QiitaSearchPresenterOutput, client:QiitaClient = QiitaClient(httpClient: URLSession.shared), imageDownloader: ImageDownloaderProtocol = ImageDownloader.shared) {
+    init (output: QiitaSearchPresenterOutput, client:QiitaClient = QiitaClient(httpClient: URLSession.shared)) {
         self.output = output
         self.client = client
-        self.imageDownloader = imageDownloader
         self.qiitaModels = []
     }
 }
@@ -46,7 +44,6 @@ extension QiitaSearchPresenter: QiitaSearchPresenterInput {
         guard let text = text else {return}
         output.showLoadingIndicator(loading: true)
 
-        //　QiitaAPI.GetArticlesとQiitaAPI.GetTagsで型違うのでうまくわけられないスケーラビリティに問題あり
         if sortType {
             let request = QiitaAPI.GetArticles(keyword: text)
             client.send(request: request) { [weak self] result in
